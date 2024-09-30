@@ -280,3 +280,24 @@ open_horario_button_five.addEventListener("click", function () {
     drop.classList.remove("drop-border");
   }
 })
+
+// dark mode 
+
+const btnDarkModeToggle = document.querySelector("#btn_tema");
+const themeSystem = localStorage.getItem("themeSystem") || "light";
+
+// Aplica o tema salvo ao carregar a página
+defineCurrentTheme(themeSystem);
+
+// Alterna o tema ao clicar no botão
+btnDarkModeToggle.addEventListener("change", () => {
+  let currentTheme = localStorage.getItem("themeSystem") || "dark";
+  let newTheme = currentTheme === "dark" ? "light" : "dark";
+  localStorage.setItem("themeSystem", newTheme);
+  defineCurrentTheme(newTheme);
+});
+
+function defineCurrentTheme(theme) {
+  // Define o atributo no HTML para alterar o tema
+  document.documentElement.setAttribute("data-theme", theme);
+}

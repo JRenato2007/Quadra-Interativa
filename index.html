@@ -17,6 +17,7 @@
       <span class="bar"></span>
       <span class="bar"></span>
     </div>
+    <!-- NAV  RESPONSIVO, CUIDADO AO MEXER -->
     <nav class="hamburger-nav closed">
       <div class="logo">
         <img src="src/images/logo.png" class="logo-img" id="image-span">
@@ -58,9 +59,23 @@
       <div class="icons-tema">
         <img src="src/icons/sun.svg" class="sun-img">
         <div class="switch__container text">
-          <!-- Switch criado pela bia para mudança de cor, requer onclick do js-->
-          <input id="switch-shadow" class="switch switch--shadow" type="radio">
-          <label for="switch-shadow"></label>
+          <label for="theme" class="theme">
+            <span class="theme__toggle-wrap">
+              <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="light">
+              <span class="theme__fill"></span>
+              <span class="theme__icon">
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+              </span>
+            </span>
+          </label>
         </div>
         <img src="src/icons/moon.svg" class="text moon-img ">
       </div>
@@ -120,10 +135,23 @@
     <!-- ============= DIV QUE SERA COLOCADA O INPUT QUE TROCARA O FUNDO DE COR   ============= -->
     <div class="icons-tema">
       <img src="src/icons/sun.svg" class="sun-img">
-      <div class="switch__container text">
-        <!-- Switch criado pela bia para mudança de cor, requer onclick do js-->
-        <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-        <label for="switch-shadow"></label>
+      <div class="text">
+        <label for="theme" class=" theme">
+          <span class="theme__toggle-wrap" id="btn_tema">
+            <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="light">
+            <span class="theme__icon">
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+              <span class="theme__icon-part"></span>
+            </span>
+          </span>
+        </label>
       </div>
       <img src="src/icons/moon.svg" class="text moon-img ">
     </div>
